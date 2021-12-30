@@ -1,4 +1,4 @@
-package com.springoot.practice.springsecurityjwt;
+package com.springoot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
