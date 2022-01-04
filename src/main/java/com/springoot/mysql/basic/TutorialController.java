@@ -1,4 +1,4 @@
-package com.springoot.mysql;
+package com.springoot.mysql.basic;
 
 import java.util.ArrayList;
 import java.util.List;
