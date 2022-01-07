@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<posts>
+  <row Id="1" PostTypeId="1" AcceptedAnswerId="20" CreationDate="2015-07-14T18:39:27.757" Score="4" ViewCount="123" Body="MYBODY1"/>
+  <row Id="2" PostTypeId="1" AcceptedAnswerId="20" CreationDate="2015-07-14T18:39:27.757" Score="4" ViewCount="123" Body="MYBODY2"/>
+
+</posts>

@@ -35,11 +35,18 @@ public class SalesController {
     @PostMapping("/salesrecords")
     public ResponseEntity<String> insertRecords() {
 
-        List<SalesRecordsEntity> entityList = CSVDataProcessor.readSalesCSVFile();
-        salesRepository.saveAll((entityList));
+        //List<SalesRecordsEntity> entityList = CSVDataProcessor.readSalesCSVFile();
+        //salesRepository.saveAll((entityList));
         return new ResponseEntity<>("Okay", HttpStatus.OK);
     }
 
+    @PostMapping("/salesrecord/one")
+    public ResponseEntity<String> insertRecordsOne() {
+
+        //List<SalesRecordsEntity> entityList = CSVDataProcessor.readSalesCSVFile();
+        //salesRepository.saveAll((entityList));
+        return new ResponseEntity<>("Okay", HttpStatus.OK);
+    }
     private List<SalesRecordsEntity> getEntity(List<SalesVO> list) {
         List<SalesRecordsEntity> entityList = new ArrayList<>();
         for(SalesVO vo : list) {

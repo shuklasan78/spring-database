@@ -1,0 +1,24 @@
+cqlsh
+//create keyspace needed for running the sample
+CREATE KEYSPACE mykeyspace WITH REPLICATION = { 'class' : 'SimpleStrategy', 'replication_factor' : 1 };
+USE mykeyspace;
+//CRUD operations
+
+CREATE TABLE people ( id INT PRIMARY KEY, fullname TEXT, age INT );
+INSERT INTO people (id, fullname, age) VALUES (1, 'Ankit Gupta', 30);
+SELECT * FROM people WHERE id = 1;
+
+
+create keyspace javasampleapproach with replication={'class':'SimpleStrategy', 'replication_factor':1};
+use javasampleapproach;
+
+CREATE TABLE customer(
+   id timeuuid PRIMARY KEY,
+   name text,
+   age int,
+   active boolean
+);
+
+public interface CustomerRepository extends CassandraRepository<Customer, UUID=""> {
+        List<Customer> findByAge(int age);
+        }
